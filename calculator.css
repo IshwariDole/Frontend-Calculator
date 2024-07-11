@@ -1,0 +1,101 @@
+@import url('https://font.googleapis.com/css?family=Poopins');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poopins,sans-serif ;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,lightblue,skyblue,rgb(140, 117, 203));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 400px;
+    height: 500px;
+    background: white;
+    /* background: rgba(255, 255, 255, 0.635); */
+    outline: none;
+    border: none;
+    box-shadow: 2px solid black;
+    overflow: hidden;
+    
+}
+.calculator .inputfield{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    background: black;
+}
+.calculator .inputfield input{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px solid black;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 3%;
+}
+.calculator .buttons{
+    width: 100%;
+    height: calc(100%-100px);
+    padding: 40px 30px;
+    
+
+}
+.calculator .buttons .action{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.142);
+}
+.calculator .buttons .action button{
+    width: 60px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: inset 2px 2px 5px silver;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+}
+.calculator .buttons .action button:active{
+    background: rgba(0, 0, 0, 0.57);
+}
+.calculator .buttons .number{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.calculator .buttons .number button{
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+    box-shadow: inset 2px 2px 5px silver;
+}
